@@ -8,7 +8,8 @@ class Certificacao extends Model{
       numeracao: DataTypes.NUMBER,
     }, {
       sequelize: connection,
-      modelName:'Certificacao'
+      modelName:'Certificacao',
+      tableName: 'certificacao'
     })
   };
 

@@ -28,3 +28,6 @@ Certificacao.associate(connection.models);
 Corretor.associate(connection.models);
 Contato.associate(connection.models);
 Empresa.associate(connection.models);
+
+
+module.exports = connection;

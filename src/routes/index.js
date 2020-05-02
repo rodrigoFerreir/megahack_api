@@ -7,10 +7,11 @@ const route = router.get('/', (req, res, next) => {
         message: 'Aplicação Node.js rodadando.',
         version: '0.0.2',
         routes:[
-            '/corretor',
-            '/contato',
-            '/certificacao',
-            '/empresa',
+            '/corretores',
+            '/corretores/corretor',
+            '/contatos',
+            '/certificacoes',
+            '/empresas',
         ]
     })
 });

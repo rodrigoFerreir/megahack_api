@@ -2,6 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors')
 
+//conectando banco de dados
+require('./database/data');
+
 const port = process.env.PORT || '8000';
 
 const app = express();
@@ -17,10 +20,10 @@ const empresaRouter = require('./routes/routes-empresa');
 
 //iniciando as Rotas
 app.use('/', indexRouter);
-app.use('/certificacao', certificacaoRouter);
-app.use('/corretor', corretorRouter);
-app.use('/contato', contatoRouter);
-app.use('/empresa', empresaRouter);
+app.use('/certificacoes', certificacaoRouter);
+app.use('/corretores', corretorRouter);
+app.use('/contatos', contatoRouter);
+app.use('/empresas', empresaRouter);
 
 app.listen(port, ()=>{
     console.log(`Servidor rodando...${port}`)

@@ -28,7 +28,7 @@ module.exports = {
           type: Sequelize.INTEGER,
           allowNull: false,
         },
-        tempo_atuação:{
+        tempo_atuacao:{
           type: Sequelize.STRING,
           allowNull: false,
         }, 

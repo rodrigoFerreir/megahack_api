@@ -7,7 +7,8 @@ class Contato extends Model{
       email: DataTypes.TEXT,
     }, {
       sequelize: connection,
-      modelName:'Contato'
+      modelName:'Contato',
+      tableName: 'contatos'
     })
   };
 

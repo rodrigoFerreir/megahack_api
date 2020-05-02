@@ -3,6 +3,7 @@ const router = express.Router();
 const controller = require('../controllers/controller-corrertor');
 
 router.post('/', controller.post);
+router.get('/corretor', controller.geByName)
 router.get('/', controller.get);
 router.put('/', controller.put);
 router.delete('/', controller.delete);
